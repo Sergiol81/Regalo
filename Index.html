@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Navidad</title>
+
+    <!-- Íconos navideños -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+
+<!-- EFECTO DE NIEVE -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const AMOUNT = 80;
+    const body = document.body;
+
+    function rand(min, max) { return Math.random() * (max - min) + min; }
+
+    for (let i = 0; i < AMOUNT; i++) {
+        const flake = document.createElement("div");
+        flake.className = "snowflake";
+        flake.textContent = "❄";
+
+        flake.style.left = rand(0, 100) + "vw";
+        flake.style.setProperty("--size", Math.round(rand(10, 36)) + "px");
+        flake.style.setProperty("--opacity", rand(0.3, 0.95).toFixed(2));
+        flake.style.setProperty("--duration", rand(6, 16).toFixed(2) + "s");
+        flake.style.setProperty("--delay", rand(0, 10).toFixed(2) + "s");
+        flake.style.setProperty("--drift", Math.round(rand(-120, 120)) + "px");
+
+        body.appendChild(flake);
+    }
+});
+</script>
+
+<!-- CONTENIDO PRINCIPAL -->
+<header>
+    <h1><i class="fa-solid fa-holly-berry"></i> Mi Carta de Navidad <i class="fa-solid fa-holly-berry"></i></h1>
+</header>
+
+<main>
+
+    <!-- INTRO -->
+    <section id="informacion-html">
+        <figure>
+            <img src="navidad.jpeg" alt="Navidad">
+            <figcaption>🎄 ¡Feliz Navidad! 🎄</figcaption>
+        </figure>
+
+        <p>
+            Querido Santa Claus, este año he sido muy buen niño.
+            He aprendido nuevas cosas, me he portado muy bien en la universidad y
+            he sido muy juicioso para no estresar a mis padres.
+        </p>
+
+        <p>Mi lista de regalos será esta:</p>
+        <p><em>(Nota: Los precios suelen ser más bajos o más caros jajaja)</em></p>
+    </section>
+
+    <!-- SECCIÓN DE REGALOS -->
+    <section id="caracteristicas">
+        <h2><i class="fa-solid fa-gift"></i> Mis Regalitos</h2>
+
+        <ul class="lista-navidad">
+
+            <!-- TARJETA 1 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-star"></i>
+                    <strong>Micrófono HyperX Solocast</strong>
+                </div>
+
+                <figure>
+                    <img src="Microfono.png" alt="Micrófono HyperX">
+                </figure>
+
+                <a href="https://www.falabella.com.co/falabella-co/product/140638841/Microfono-Hyperx-Solocast-Condensador/140638842" target="_blank">
+                    🎁 Ver producto
+                </a>
+            </li>
+
+            <!-- TARJETA 2 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <strong>Control Inalámbrico Redragon</strong>
+                </div>
+
+                <figure>
+                    <img src="Mando.png" alt="Control Redragon">
+                </figure>
+
+                <a href="https://www.mercadolibre.com.co/control-mando-joystick-inalambrico-pc-redragon-harrow-pro-g8/up/MCOU3249198345" target="_blank">
+                    🎮 Ver producto
+                </a>
+            </li>
+
+            <!-- TARJETA 3 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-computer"></i>
+                    <strong>Gabinete Gamer Raidmax</strong>
+                </div>
+
+                <figure>
+                    <img src="Chasis.png" alt="Gabinete Gamer">
+                </figure>
+
+                <a href="https://www.mercadolibre.com.co/gabinete-gamer-raidmax-infinita-i802-air-black-5-ventiladores-argb/p/MCO47341091#reviews" target="_blank">
+                    🖥 Ver producto
+                </a>
+            </li>
+
+            <!-- TARJETA 4 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-mirror"></i>
+                    <strong>Espejo cuerpo completo</strong>
+                </div>
+
+                <figure>
+                    <img src="Espejo.jpeg" alt="Espejo cuerpo completo">
+                </figure>
+
+                <a href="https://www.mercadolibre.com.co/espejo-completo-beverdy-rectangular-18x58-dorado-aluminio-piso/p/MCO60140456" target="_blank">
+                    🪞 Ver producto
+                </a>
+            </li>
+
+            <!-- TARJETA 5 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <strong>Lámpara LED para Monitor</strong>
+                </div>
+
+                <figure>
+                    <img src="Lampara.webp" alt="Lámpara LED">
+                </figure>
+
+                <a href="https://articulo.mercadolibre.com.co/MCO-3168707218-lampara-led-monitor-escritorio-ajustable-antireflejo-50cm-_JM" target="_blank">
+                    💡 Ver producto
+                </a>
+            </li>
+
+            <!-- TARJETA 6 -->
+            <li class="gift-card">
+                <div class="gift-title">
+                    <i class="fa-solid fa-headphones"></i>
+                    <strong>Soporte para controles y auriculares</strong>
+                </div>
+
+                <figure>
+                    <img src="Soporte.png" alt="Soporte RGB">
+                </figure>
+
+                <a href="https://www.mercadolibre.com.co/soporte-para-controles-y-auriculares-ps-xbox-pc-luz-rgb/up/MCOU2424999734" target="_blank">
+                    🎧 Ver producto
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- EXTRAS -->
+    <section id="datos-importantes">
+        <h2><i class="fa-solid fa-sack-dollar"></i> Regalos Extras</h2>
+
+        <ol>
+            <li><strong>Algo que realmente deseo:</strong> 💵 Dinero</li>
+            <li><strong>Algo que necesito:</strong> 💵 Dinero</li>
+            <li><strong>Algo que me gustaría mucho:</strong> 💵 Dinero</li>
+        </ol>
+    </section>
+
+    <!-- FINAL -->
+    <section id="referencia">
+        <p>Gracias Santa por leer mi carta. Prometo seguir mejorando cada año. 🎅✨</p>
+        <p>Con mucho cariño ❤️</p>
+    </section>
+
+</main>
+</body>
+</html>
